@@ -1,6 +1,7 @@
 import { createGlobalTheme } from "@vanilla-extract/css";
 
 export const vars = createGlobalTheme(":root", {
+  minWidth: "800px",
   fontSize: {
     t1: "3rem",
     t2: "2.5rem",

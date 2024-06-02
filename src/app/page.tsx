@@ -1,4 +1,5 @@
 import * as styles from "@/containers/home/index.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -9,11 +10,11 @@ export default function Home() {
           &#128075;
         </p>
       </div>
-      <div className={styles.row}>
+      <Link href="/about" className={styles.row}>
         <span>I&#39;m JIWOO CHOI</span>
         <span>ABOUT ME</span>
         <p className={styles.icon}>&#8640;</p>
-      </div>
+      </Link>
       <div className={styles.row}>
         <span>The skills I have</span>
         <span>SKILLS</span>

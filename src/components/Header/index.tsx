@@ -4,11 +4,11 @@ import * as styles from "./index.css";
 export default function Header() {
   return (
     <header className={styles.header}>
-      <button type="button" className={styles.title}>
+      <a href="/" type="button" className={styles.title}>
         JIWOO CHOI
-      </button>
-      <button type="button" className={styles.title}>
-        <MenuIcon />
+      </a>
+      <button type="button" className={styles.menu}>
+        <MenuIcon style={{ fontSize: "20px" }} />
       </button>
     </header>
   );

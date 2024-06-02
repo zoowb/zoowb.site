@@ -4,6 +4,7 @@ import { globalStyle, style } from "@vanilla-extract/css";
 export const main = style({});
 
 export const row = style({
+  display: "block",
   width: "100%",
   border: `1px solid ${vars.color.black}`,
   borderWidth: "0 0 1px 0",
@@ -13,6 +14,7 @@ export const row = style({
   fontSize: vars.fontSize.xlarge,
   fontWeight: "700",
   textAlign: "right",
+  textDecoration: "none",
 
   ":hover": {
     backgroundColor: vars.color.black,

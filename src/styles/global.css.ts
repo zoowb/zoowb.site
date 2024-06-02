@@ -1,7 +1,24 @@
 import { globalStyle } from "@vanilla-extract/css";
+import { vars } from "./variables.css";
+
+globalStyle("html", {
+  "@media": {
+    "(max-width: 800px)": {
+      fontSize: "10px",
+    },
+    "(max-width: 479px)": {
+      fontSize: "8px",
+    },
+  },
+});
 
 globalStyle("body", {
   margin: 0,
+  backgroundColor: vars.color.gray100,
+});
+
+globalStyle("header", {
+  color: vars.color.blue500,
 });
 
 globalStyle("*", {

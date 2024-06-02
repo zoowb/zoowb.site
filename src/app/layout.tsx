@@ -1,10 +1,11 @@
 import Header from "@/components/Header";
+import RecoilRootWrapper from "@/components/RecoilWarpper";
 import "@/styles/global.css";
 import type { Metadata } from "next";
 import { Red_Hat_Display } from "next/font/google";
 
 export const metadata: Metadata = {
-  title: "JIU's Portfolio",
+  title: "JIWOO CHOI",
   description: "Frontend Developer",
 };
 
@@ -17,10 +18,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="kr">
-      <body style={{ backgroundColor: "#f1f1f1" }} className={redHatDisplay.className}>
-        <Header />
-        {children}
-      </body>
+      <RecoilRootWrapper>
+        <body className={redHatDisplay.className}>
+          <Header />
+          {children}
+        </body>
+      </RecoilRootWrapper>
     </html>
   );
 }
