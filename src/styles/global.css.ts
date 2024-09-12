@@ -10,11 +10,17 @@ globalStyle("html", {
       fontSize: "8px",
     },
   },
+  msOverflowStyle: "none" /* IE and Edge */,
+  scrollbarWidth: "none" /* Firefox */,
 });
 
 globalStyle("body", {
   margin: 0,
   backgroundColor: vars.color.gray100,
+});
+
+globalStyle("body::-webkit-scrollbar", {
+  display: "none" /* Chrome, Safari, Opera*/,
 });
 
 globalStyle("header", {

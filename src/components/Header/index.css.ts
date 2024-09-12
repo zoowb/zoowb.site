@@ -1,10 +1,16 @@
+import { vars } from "@/styles/variables.css";
 import { globalStyle, style } from "@vanilla-extract/css";
 
 export const header = style({
+  position: "fixed",
+  width: "100%",
+  top: 0,
+
   display: "flex",
   justifyContent: "space-between",
   alignItems: "center",
-  margin: "20px",
+  padding: "20px",
+  background: vars.color.gray500,
 });
 
 export const title = style({
